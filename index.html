@@ -3,42 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Blog</title>
+  <title>John Doe's Personal Blog</title>
+  <style>
+    /* Minimal inline CSS for better presentation, still inside HTML */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 15px;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      padding: 30px 15px;
+      background-color: #f2f2f2;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      margin-bottom: 5px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    article {
+      background: white;
+      padding: 20px;
+      margin-bottom: 35px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    article h2 {
+      margin-top: 0;
+      color: #222;
+    }
+    article time {
+      color: #777;
+      font-size: 0.9em;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Blog</h1>
-    <p>Sharing my thoughts and stories</p>
-    <hr />
-  </header>
 
-  <main>
-    <article>
-      <h2>Blog Post Title 1</h2>
-      <p><em>Published on August 16, 2025</em></p>
-      <p>This is the content of the first blog post. Here you can write about whatever you want — your thoughts, ideas, or stories.</p>
-    </article>
+<header>
+  <h1>John Doe</h1>
+  <p>Insights, Stories, and Thoughts on Life & Technology</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <hr />
+<main id="home">
+  <article>
+    <h2>Understanding the Future of AI</h2>
+    <time datetime="2025-08-15">August 15, 2025</time>
+    <p>
+      AI is reshaping the world as we know it. In this post, I explore how the integration of AI in everyday life is accelerating and what that means for us in the near future.
+    </p>
+    <p>
+      From automation to creative arts, AI presents exciting opportunities and unprecedented challenges.
+    </p>
+  </article>
 
-    <article>
-      <h2>Blog Post Title 2</h2>
-      <p><em>Published on August 10, 2025</em></p>
-      <p>Here is another blog post. You can add as many articles as you want by adding more &lt;article&gt; sections.</p>
-    </article>
+  <article>
+    <h2>Traveling Solo: My Journey Across Iceland</h2>
+    <time datetime="2025-07-30">July 30, 2025</time>
+    <p>
+      Traveling alone can be intimidating but also incredibly rewarding. Here's a glimpse into my adventures through the stunning landscapes of Iceland.
+    </p>
+    <p>
+      A mix of breathtaking scenery, new friendships, and self-discovery made this trip unforgettable.
+    </p>
+  </article>
 
-    <hr />
+  <article>
+    <h2>How to Stay Productive Working from Home</h2>
+    <time datetime="2025-07-10">July 10, 2025</time>
+    <p>
+      Remote work demands discipline and healthy habits. In this blog, I share my tips and tricks for staying productive, motivated, and balanced while working from home.
+    </p>
+  </article>
+</main>
 
-    <article>
-      <h2>Blog Post Title 3</h2>
-      <p><em>Published on August 01, 2025</em></p>
-      <p>Stay tuned for more updates on this blog. Feel free to customize this template as you prefer.</p>
-    </article>
-  </main>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi, I'm John Doe, a passionate blogger, software developer, and avid traveler. I love sharing my experiences and insights on technology, productivity, and life in general.
+  </p>
+  <p>
+    When I'm not writing, you'll find me exploring new places, reading books, or experimenting with new programming projects.
+  </p>
+</section>
 
-  <footer>
-    <hr />
-    <p>© 2025 My Blog. All rights reserved.</p>
-  </footer>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>You can reach me at:</p>
+  <ul>
+    <li>Email: johndoe@example.com</li>
+    <li>Twitter: @john_doe</li>
+    <li>LinkedIn: linkedin.com/in/johndoe</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 John Doe. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

@@ -3,123 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>John Doe's Personal Blog</title>
+  <title>About Me - [Your Name]</title>
   <style>
-    /* Minimal inline CSS for better presentation, still inside HTML */
+    /* Google font import */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 15px;
-      line-height: 1.6;
-      background-color: #fafafa;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background: #e0f7fa;
+      color: #004d40;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
     }
-    header, footer {
+
+    .container {
+      background: #ffffff;
+      max-width: 700px;
+      padding: 40px 30px;
+      margin: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    header {
       text-align: center;
-      padding: 30px 15px;
-      background-color: #f2f2f2;
       margin-bottom: 40px;
+      border-bottom: 2px solid #00acc1;
+      padding-bottom: 20px;
     }
+
     header h1 {
-      margin-bottom: 5px;
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #00796b;
     }
-    nav a {
-      margin: 0 10px;
-      color: #007BFF;
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 6px;
+      color: #004d40cc;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #00796b;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #00acc1;
+      padding-bottom: 6px;
+      font-weight: 700;
+    }
+
+    p, ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #004d40dd;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Links styling */
+    a {
+      color: #0097a7;
       text-decoration: none;
+      font-weight: 600;
     }
-    nav a:hover {
+
+    a:hover {
       text-decoration: underline;
+      color: #004d40;
     }
-    article {
-      background: white;
-      padding: 20px;
-      margin-bottom: 35px;
+
+    /* Contact info styling */
+    .contact-info li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Icons for contact (using Unicode or emojis for simplicity) */
+    .icon {
+      font-size: 1.2rem;
+      color: #00796b;
+      width: 24px;
+      text-align: center;
+    }
+
+    /* Button style for project link */
+    .project-link {
+      display: inline-block;
+      background-color: #00796b;
+      color: white;
+      padding: 12px 20px;
       border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
     }
-    article h2 {
-      margin-top: 0;
-      color: #222;
+
+    .project-link:hover {
+      background-color: #004d40;
     }
-    article time {
-      color: #777;
-      font-size: 0.9em;
-    }
-    footer p {
-      font-size: 0.9em;
-      color: #666;
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>[Your Name]</h1>
+      <p>[Your Profession] | [Your Specialty]</p>
+    </header>
 
-<header>
-  <h1>John Doe</h1>
-  <p>Insights, Stories, and Thoughts on Life & Technology</p>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <section>
+      <h2>Contact Information</h2>
+      <ul class="contact-info">
+        <li><span class="icon">📞</span> Phone: <a href="tel:+1234567890">+123-456-7890</a></li>
+        <li><span class="icon">📧</span> Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li><span class="icon">🔗</span> LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></li>
+        <li><span class="icon">📘</span> Facebook: <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener">yourprofile</a></li>
+      </ul>
+    </section>
 
-<main id="home">
-  <article>
-    <h2>Understanding the Future of AI</h2>
-    <time datetime="2025-08-15">August 15, 2025</time>
-    <p>
-      AI is reshaping the world as we know it. In this post, I explore how the integration of AI in everyday life is accelerating and what that means for us in the near future.
-    </p>
-    <p>
-      From automation to creative arts, AI presents exciting opportunities and unprecedented challenges.
-    </p>
-  </article>
+    <section>
+      <h2>Projects</h2>
+      <p>Here are some of my recent projects. You can explore more by visiting the link below:</p>
+      <a href="https://yourprojectlink.com" target="_blank" rel="noopener" class="project-link">View My Projects</a>
+    </section>
 
-  <article>
-    <h2>Traveling Solo: My Journey Across Iceland</h2>
-    <time datetime="2025-07-30">July 30, 2025</time>
-    <p>
-      Traveling alone can be intimidating but also incredibly rewarding. Here's a glimpse into my adventures through the stunning landscapes of Iceland.
-    </p>
-    <p>
-      A mix of breathtaking scenery, new friendships, and self-discovery made this trip unforgettable.
-    </p>
-  </article>
-
-  <article>
-    <h2>How to Stay Productive Working from Home</h2>
-    <time datetime="2025-07-10">July 10, 2025</time>
-    <p>
-      Remote work demands discipline and healthy habits. In this blog, I share my tips and tricks for staying productive, motivated, and balanced while working from home.
-    </p>
-  </article>
-</main>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Hi, I'm John Doe, a passionate blogger, software developer, and avid traveler. I love sharing my experiences and insights on technology, productivity, and life in general.
-  </p>
-  <p>
-    When I'm not writing, you'll find me exploring new places, reading books, or experimenting with new programming projects.
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>You can reach me at:</p>
-  <ul>
-    <li>Email: johndoe@example.com</li>
-    <li>Twitter: @john_doe</li>
-    <li>LinkedIn: linkedin.com/in/johndoe</li>
-  </ul>
-</section>
-
-<footer>
-  <p>© 2025 John Doe. All rights reserved.</p>
-</footer>
-
+    <section>
+      <h2>What I Do</h2>
+      <p>
+        I specialize in [your core skills or services], focusing on delivering
+        [solutions/products] that help [target audience or industry]. My passion is
+        to continuously learn and improve, implementing best practices in
+        [relevant technologies or methods]. In brief, I help businesses and individuals
+        achieve their goals through [your expertise].
+      </p>
+    </section>
+  </div>
 </body>
 </html>

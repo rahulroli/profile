@@ -3,166 +3,209 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Me - [Your Name]</title>
+  <title>Your Name - Personal Portfolio</title>
   <style>
-    /* Google font import */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #e0f7fa;
-      color: #004d40;
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      min-height: 100vh;
     }
 
-    .container {
-      background: #ffffff;
-      max-width: 700px;
-      padding: 40px 30px;
-      margin: 40px 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7fa;
+      color: #333;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
     header {
       text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #007acc;
       margin-bottom: 40px;
-      border-bottom: 2px solid #00acc1;
-      padding-bottom: 20px;
     }
 
     header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: #00796b;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 6px;
-      color: #004d40cc;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: #00796b;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #00acc1;
-      padding-bottom: 6px;
-      font-weight: 700;
-    }
-
-    p, ul {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #004d40dd;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
+      font-size: 2.8em;
+      color: #007acc;
       margin-bottom: 10px;
     }
 
-    /* Links styling */
-    a {
-      color: #0097a7;
-      text-decoration: none;
-      font-weight: 600;
+    header p {
+      font-size: 1.1em;
+      color: #555;
+      font-style: italic;
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: #004d40;
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
     }
 
-    /* Contact info styling */
-    .contact-info li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    section h2 {
+      border-left: 5px solid #007acc;
+      padding-left: 12px;
+      margin-bottom: 20px;
+      color: #007acc;
+      font-size: 1.8em;
     }
 
-    /* Icons for contact (using Unicode or emojis for simplicity) */
-    .icon {
-      font-size: 1.2rem;
-      color: #00796b;
-      width: 24px;
+    /* About me */
+    #about p {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job h3 {
+      font-size: 1.3em;
+      color: #222;
+    }
+
+    .job .job-title {
+      font-weight: bold;
+      color: #007acc;
+    }
+
+    .job .job-period {
+      color: #888;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    .job ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #555;
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      font-size: 1.3em;
+      color: #222;
+    }
+
+    .project p {
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    /* Personal details */
+    #personal-details ul {
+      list-style: none;
+      padding-left: 0;
+      color: #555;
+    }
+
+    #personal-details ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    /* Footer */
+    footer {
       text-align: center;
-    }
-
-    /* Button style for project link */
-    .project-link {
-      display: inline-block;
-      background-color: #00796b;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-      margin-top: 10px;
-    }
-
-    .project-link:hover {
-      background-color: #004d40;
+      margin-top: 50px;
+      padding-top: 15px;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
     }
 
     /* Responsive */
-    @media (max-width: 480px) {
-      .container {
-        padding: 30px 20px;
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
       }
 
       header h1 {
-        font-size: 2rem;
+        font-size: 2em;
+      }
+
+      section {
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>[Your Name]</h1>
-      <p>[Your Profession] | [Your Specialty]</p>
-    </header>
 
-    <section>
-      <h2>Contact Information</h2>
-      <ul class="contact-info">
-        <li><span class="icon">📞</span> Phone: <a href="tel:+1234567890">+123-456-7890</a></li>
-        <li><span class="icon">📧</span> Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li><span class="icon">🔗</span> LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></li>
-        <li><span class="icon">📘</span> Facebook: <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener">yourprofile</a></li>
-      </ul>
-    </section>
+<header>
+  <h1>Your Name</h1>
+  <p>Professional Title | Location | Email/contact info</p>
+</header>
 
-    <section>
-      <h2>Projects</h2>
-      <p>Here are some of my recent projects. You can explore more by visiting the link below:</p>
-      <a href="https://yourprojectlink.com" target="_blank" rel="noopener" class="project-link">View My Projects</a>
-    </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Write a brief introduction about yourself here. Talk about your professional background, your passion, what motivates you, key skills, and what you are looking forward to.
+  </p>
+</section>
 
-    <section>
-      <h2>What I Do</h2>
-      <p>
-        I specialize in [your core skills or services], focusing on delivering
-        [solutions/products] that help [target audience or industry]. My passion is
-        to continuously learn and improve, implementing best practices in
-        [relevant technologies or methods]. In brief, I help businesses and individuals
-        achieve their goals through [your expertise].
-      </p>
-    </section>
+<section id="experience">
+  <h2>Professional Work Experience</h2>
+  <div class="job">
+    <h3>Company Name 1</h3>
+    <div class="job-title">Senior Role, Department</div>
+    <div class="job-period">Jan 2020 – Present</div>
+    <ul>
+      <li>Responsibility or achievement one with quantifiable impact (e.g., improved performance by 20%).</li>
+      <li>Responsibility or achievement two.</li>
+      <li>Technology/tools used or leadership experience.</li>
+    </ul>
   </div>
+  <div class="job">
+    <h3>Company Name 2</h3>
+    <div class="job-title">Role, Department</div>
+    <div class="job-period">Jun 2017 – Dec 2019</div>
+    <ul>
+      <li>Key responsibility or achievement.</li>
+      <li>Project you worked on or contribution.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Work Projects</h2>
+  <div class="project">
+    <h3>Project Name 1</h3>
+    <p>Brief description of the project, your role, technologies used, and outcomes.</p>
+  </div>
+  <div class="project">
+    <h3>Project Name 2</h3>
+    <p>Brief description of the second project, impact, or innovation you contributed.</p>
+  </div>
+</section>
+
+<section id="personal-details">
+  <h2>Personal Details</h2>
+  <ul>
+    <li><strong>Email:</strong> your.email@example.com</li>
+    <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+    <li><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</li>
+    <li><strong>GitHub:</strong> github.com/yourprofile</li>
+    <li><strong>Location:</strong> City, Country</li>
+  </ul>
+</section>
+
+<footer>
+  © 2025 Your Name. All Rights Reserved.
+</footer>
+
 </body>
 </html>
